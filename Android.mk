@@ -1,4 +1,3 @@
-ifeq ($(TARGET_POWERHAL_VARIANT),qcom)
 LOCAL_PATH := $(call my-dir)
 
 # HAL module implemenation stored in
@@ -102,6 +101,3 @@ LOCAL_CFLAGS += -Wno-unused-parameter -Wno-unused-variable
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_EXECUTABLE)
 endif
-
-
-endif #TARGET_POWERHAL_VARIANT
